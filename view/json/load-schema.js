@@ -4,7 +4,12 @@ async function loadSchema(url) {
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
-    document.getElementById("json-schema").innerHTML = await response.text();
+    let element = document.getElementById("json-schema");
+    element.innerHTML = await response.text();
+    hljs.addPlugin(new CopyButtonPlugin({
+      autohide: false, // Always show the copy button
+    }));
+    hljs.highlightElement(element);
   } catch (error) {
     console.error(error.message);
   }

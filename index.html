@@ -13,10 +13,10 @@
 
 <body>
 <div class="container">
-  <section class="" style="padding-block: var(--size-4);">
+  <section style="margin-block: var(--size-2);">
     <nav class="horizontal-menu square">
       <ul>
-        <li><a href="https://github.com/reactive-graph/">github</a></li>
+        <li><a href="https://github.com/reactive-graph/"><i class="ti ti-brand-github"></i></a></li>
         <li><a href="https://www.reactive-graph.io/">www</a></li>
         <li><a href="https://docs.reactive-graph.io/">docs</a></li>
         <li style="background-color: var(--brand);"><a href="https://schema.reactive-graph.io/">schema</a></li>
@@ -28,7 +28,7 @@
       </ul>
     </nav>
   </section>
-  <hr class="surface-3">
+  <hr class="surface-3" style="margin-block: var(--size-3);">
   <section>
     <article class="rg-article">
       <h1 class="rg-article-title">
@@ -37,12 +37,11 @@
           schema.reactive-graph.io
         </span>
       </h1>
-      <hr class="surface-3">
+      <hr class="surface-3" style="margin-block: var(--size-3);">
       <p class="rg-article-intro">
         On this page you will find the schema files for Reactive Graph. Reactive Graph is a reactive runtime based on a graph database, empowering everyone to
         build reliable and efficient software.
       </p>
-
       <hr class="surface-3">
       <h3>
         <a href="/schema" style="color: var(--malachite); font-size: var(--size-6)">&lt; GraphQL Schemas &gt;</a>
@@ -52,20 +51,34 @@
         <tr>
           <th>Schema</th>
           <th>Description</th>
+          <th>Visualization</th>
+          <th>Download</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td><a href="/schema/graphql/reactive-graph-schema.graphql">Reactive Graph</a></td>
+          <td><a href="/view/graphql/reactive-graph-schema.html">Reactive Graph</a></td>
           <td>Query and mutate the type system and the instance system.</td>
+          <td><a href="/visualization/graphql/reactive-graph-schema.html"><i class="ti ti-chart-dots-3"></i></a></td>
+          <td><a href="/schema/graphql/reactive-graph-schema.graphql" download><i class="ti ti-download"></i></a></td>
         </tr>
         <tr>
-          <td><a href="/schema/graphql/reactive-graph-plugin-schema.graphql">Plugin System</a></td>
+          <td><a href="/view/graphql/dynamic-graph-schema.html">Dynamic Graph</a></td>
+          <td>Powerful dynamically generated GraphQL schema.</td>
+          <td><a href="/visualization/graphql/dynamic-graph-schema.html"><i class="ti ti-chart-dots-3"></i></a></td>
+          <td><a href="/schema/graphql/dynamic-graph-schema.graphql" download><i class="ti ti-download"></i></a></td>
+        </tr>
+        <tr>
+          <td><a href="/view/graphql/reactive-graph-plugin-schema.html">Plugin System</a></td>
           <td>Start, stop and monitor plugins.</td>
+          <td><a href="/visualization/graphql/reactive-graph-plugin-schema.html"><i class="ti ti-chart-dots-3"></i></a></td>
+          <td><a href="/schema/graphql/reactive-graph-plugin-schema.graphql" download><i class="ti ti-download"></i></a></td>
         </tr>
         <tr>
-          <td><a href="/schema/graphql/reactive-graph-runtime-schema.graphql">Runtime</a></td>
+          <td><a href="/view/graphql/reactive-graph-runtime-schema.html">Runtime</a></td>
           <td>Manage the runtime, commands and remote instances.</td>
+          <td><a href="/visualization/graphql/reactive-graph-runtime-schema.html"><i class="ti ti-chart-dots-3"></i></a></td>
+          <td><a href="/schema/graphql/reactive-graph-runtime-schema.graphql" download><i class="ti ti-download"></i></a></td>
         </tr>
         </tbody>
       </table>

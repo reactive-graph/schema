@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="https://design.reactive-graph.io/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="https://design.reactive-graph.io/favicon/favicon.png">
+  <link rel="stylesheet" href="https://design.reactive-graph.io/css/reactive-graph.css">
+  <script src="https://design.reactive-graph.io/js/highlight/highlight.min.js"></script>
+  <script src="https://design.reactive-graph.io/js/highlight/highlight-copy.min.js"></script>
+  <script src="load-schema.js"></script>
+  <title>schema.reactive-graph.io</title>
+</head>
+
+<body>
+<div class="container">
+  <section style="margin-block: var(--size-2);">
+    <nav class="horizontal-menu square">
+      <ul>
+        <li><a href="https://github.com/reactive-graph/"><i class="ti ti-brand-github"></i></a></li>
+        <li><a href="https://www.reactive-graph.io/">www</a></li>
+        <li><a href="https://docs.reactive-graph.io/">docs</a></li>
+        <li style="background-color: var(--brand);"><a href="https://schema.reactive-graph.io/">schema</a></li>
+        <li><a href="https://std.reactive-graph.io/">std</a></li>
+        <li><a href="https://net.reactive-graph.io/">net</a></li>
+        <li><a href="https://sys.reactive-graph.io/">sys</a></li>
+        <li><a href="https://tooling.reactive-graph.io/">tooling</a></li>
+        <li><a href="https://design.reactive-graph.io/">design</a></li>
+      </ul>
+    </nav>
+  </section>
+  <hr class="surface-3" style="margin-block: var(--size-3);">
+  <section>
+    <article class="rg-article">
+      <h1 class="rg-article-title">
+        <img src="https://design.reactive-graph.io/logo/circle/reactive-graph-circle-mexican-pink.svg" alt="Reactive Graph Logo"
+             style="width: 75px; height: 75px; float: left;"/>
+        <span style="padding-left: 25px;">
+          schema.reactive-graph.io
+        </span>
+      </h1>
+    </article>
+  </section>
+  <hr class="surface-3" style="margin-block: var(--size-3);">
+  <section class="" style="margin-block: var(--size-2);">
+    <nav class="horizontal-menu square">
+      <ul>
+        <li><a href="../../index.html"><i class="ti ti-arrow-narrow-up"></i></a></li>
+        <li><a href="reactive-graph-schema.html">Reactive Graph</a></li>
+        <li><a href="dynamic-graph-schema.html">Dynamic Graph</a></li>
+        <li><a href="reactive-graph-plugin-schema.html">Plugin</a></li>
+        <li style="background-color: var(--brand);"><a href="reactive-graph-runtime-schema.html">Runtime</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section>
+    <pre id="sdl" class="code-block language-graphql"></pre>
+  </section>
+</div>
+<script>
+  loadSchema("https://schema.reactive-graph.io/schema/graphql/reactive-graph-runtime-schema.graphql").then(_ => {})
+</script>
+<script src="https://design.reactive-graph.io/js/highlight/init.js"></script>
+</body>
+
+</html>
